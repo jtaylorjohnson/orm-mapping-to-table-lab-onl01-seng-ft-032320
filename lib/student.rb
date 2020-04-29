@@ -16,7 +16,12 @@ class Student
       name TEXT,
       grade TEXT
       )
-    SQL
+      SQL
+    DB[:conn].execute(sql)
+  end
+  
+  def self.drop_table
+    sql = 
   
 
   # Remember, you can access your database connection anywhere in this class
